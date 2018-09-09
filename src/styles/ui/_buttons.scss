@@ -1,0 +1,459 @@
+
+/*--- button style ---*/
+
+.mat-button{
+	min-width: auto;
+}
+.mat-button-focus-overlay{
+	background: transparent !important;
+}
+span.mat-button-wrapper {
+    position: relative;
+    z-index: 99;
+}
+.btn, 
+.btn.mat-button,
+.input-group-btn .btn{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 3px;
+	margin: 15px 6px;
+	padding: 0;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: $poppins;
+	text-transform: capitalize;
+	min-width: auto;
+}
+.mat-button.btn:hover,
+.mat-button.btn:focus,
+.mat-button.btn:active,
+.mat-button.btn:focus:active{
+	text-decoration: none;
+	box-shadow: none;
+}
+.btn-rounded.mat-button,
+.btn-rounded .mat-button-ripple{
+	border-radius: 10em;
+}
+
+.btn-link:hover,
+.mat-button:hover,
+.mat-button:active,
+.mat-button:focus,
+.mat-button:focus:active{
+	background: transparent;
+	box-shadow: none;
+	outline: 0;
+	border: none;
+}
+.btn.btn-link,
+.btn-link{
+	background-color: #fff;
+    color: $primary_clr;
+	transition: all 0.3s ease-in;
+}
+
+.mat-button.btn-default,
+.mat-button.btn-default:hover,
+.mat-button.btn-default:focus, 
+.mat-button.btn-default:active,
+.mat-button.btn-default:focus:active{
+	background: $default_gray;
+	box-shadow: none;
+}
+
+.btn-primary:not([disabled]):not(.disabled):active:focus,
+.input-group-btn .mat-button.btn-primary, 
+.btn.btn-fab.btn-danger,
+.mat-button.btn-primary,
+.input-group-btn .mat-button.btn-fab.btn-primary, 
+.input-group-btn .mat-button.btn-primary,
+.mat-button.btn-primary, 
+.mat-button.btn-primary:hover,
+.mat-button.btn-primary:focus, 
+.mat-button.btn-primary:active,
+.mat-button.btn-primary:focus:active{
+	background: $primary_clr;
+	color: $white_clr;
+	box-shadow: none;
+}
+.btn-info:not([disabled]):not(.disabled):active:focus,
+.input-group-btn .mat-button.btn-info, 
+.btn.btn-fab.btn-danger, .mat-button.btn-info,
+.input-group-btn .mat-button.btn-fab.btn-info, 
+.input-group-btn .mat-button.btn-primary,
+.mat-button.btn-info, 
+.mat-button.btn-info:hover,
+.mat-button.btn-info:focus, 
+.mat-button.btn-info:active,
+.mat-button.btn-info:focus:active{
+	background: $info_clr;
+	color: $white_clr;
+	box-shadow: none;
+}
+.btn-danger:not([disabled]):not(.disabled):active:focus,
+.mat-button.btn-danger, 
+.input-group-btn .mat-button.btn-danger, 
+.btn.btn-fab.btn-danger, .mat-button.btn-danger,
+.input-group-btn .mat-button.btn-fab.btn-danger, 
+.input-group-btn .mat-button.btn-danger,
+.mat-button.btn-danger:hover,
+.mat-button.btn-danger:focus, 
+.mat-button.btn-danger:active,
+.mat-button.btn-danger:focus:active{
+	background: $danger_clr;
+	color: $white_clr;
+	box-shadow: none;
+}
+.mat-button.btn-warning,
+.input-group-btn .mat-button.btn-warning,
+.mat-button.btn-fab.btn-warning,
+.mat-button.btn-warning,
+.mat-button.btn-warning:hover,
+.mat-button.btn-warning:focus, 
+.mat-button.btn-warning:active,
+.mat-button.btn-warning:focus:active
+.input-group-btn .mat-button.btn-fab.btn-warning, 
+.input-group-btn .mat-button.btn-warning,
+.btn-group-vertical.open>.dropdown-toggle.mat-button.btn-warning,
+.btn-group.open>.dropdown-toggle.mat-button.btn-warning{
+	background: $warning_clr;
+	color: $white_clr;
+	box-shadow: none;
+}
+.btn-success:not([disabled]):not(.disabled):active:focus,
+.mat-button.btn-success,
+.mat-button.btn-success:hover,
+.mat-button.btn-success:focus, 
+.mat-button.btn-success:active,
+.mat-button.btn-success:focus:active{
+	background-color: $success_clr;
+	color: $white_clr;
+	box-shadow: none;
+}
+/*--- outline button ---*/
+
+.mat-button.btn-outline-default,
+.mat-button.btn-outline-default:active, 
+.mat-button.btn-outline-default:active:focus, 
+.mat-button.btn-outline-default:focus, 
+.mat-button.btn-outline-default:hover{
+	color: $lime_dark_clr;
+	background: transparent;
+	border: 1px solid $border_clr;
+}
+
+
+.mat-button.btn-outline-primary,
+.mat-button.btn-outline-primary:active, 
+.mat-button.btn-outline-primary:active:focus, 
+.mat-button.btn-outline-primary:focus, 
+.mat-button.btn-outline-primary:hover{
+	color: $primary_clr;
+	background: transparent;
+	border: 1px solid $primary_clr;
+}
+
+.mat-button.btn-outline-success,
+.mat-button.btn-outline-success:active, 
+.mat-button.btn-outline-success:active:focus, 
+.mat-button.btn-outline-success:focus, 
+.mat-button.btn-outline-success:hover{
+	color: $success_clr;
+	background: transparent;
+	border: 1px solid $success_clr;
+}
+
+.mat-button.btn-outline-info,
+.mat-button.btn-outline-info:active, 
+.mat-button.btn-outline-info:active:focus, 
+.mat-button.btn-outline-info:focus, 
+.mat-button.btn-outline-info:hover{
+	color: $info_clr;
+	background: transparent;
+	border: 1px solid $info_clr;
+	box-shadow: none;
+}
+
+
+.mat-button.btn-outline-danger,
+.mat-button.btn-outline-danger:active, 
+.mat-button.btn-outline-danger:active:focus, 
+.mat-button.btn-outline-danger:focus, 
+.mat-button.btn-outline-danger:hover{
+	color: $danger_clr;
+	background: transparent;
+	border: 1px solid $danger_clr;
+	box-shadow: none;
+}
+
+.mat-button.mat-button.btn-outline-warning,
+.mat-button.mat-button.btn-outline-warning:active, 
+.mat-button.mat-button.btn-outline-warning:active:focus, 
+.mat-button.mat-button.btn-outline-warning:focus, 
+.mat-button.mat-button.btn-outline-warning:hover{
+	color: $warning_clr;
+	background: transparent;
+	border: 1px solid $warning_clr;
+	box-shadow: none;
+}
+
+.mat-button.btn-outline-dsable,
+.mat-button.btn-outline-dsable:active, 
+.mat-button.btn-outline-dsable:active:focus, 
+.mat-button.btn-outline-dsable:focus, 
+.mat-button.btn-outline-dsable:hover{
+	color: $disable_clr;
+	background: transparent;
+	border: 1px solid $disable_clr;
+}
+.btn.btn-xs{
+	width: 85px;
+	padding: 0;
+	font-size: 15px;
+}
+.btn.btn-sm{
+	width: 100px;
+	padding: 0;
+	font-size: 15px;
+}
+.btn-block .btn.btn-ex-one,
+.panel-body .btn.btn-ex-one,
+.btn.btn-ex-one:active, 
+.btn.btn-ex-one:active:focus, 
+.btn.btn-ex-one:focus, 
+.btn.btn-ex-one:hover{
+	background: $info2_clr;
+	color: $white_clr;
+}
+.btn.btn-md{
+	width: 120px;
+	padding: 0;
+	font-size: 15px;
+}
+.btn-ex-one:active,
+.btn-ex-one:focus,
+.btn-ex-one:hover,
+.btn.btn-ex-one:active:focus{
+	background-color: rgba(131, 233, 210, 0.76);
+}
+.btn.btn-lg{
+	width: 140px;
+	padding: 0;
+	font-size: 15px;
+}
+
+/*-- button height --*/
+.btn-h-md{
+	height: 35px;
+	line-height: 10px;
+}
+.btn-h-sm{
+	height: 30px;
+	line-height: 8px;
+}
+.btn-h-xs{
+	height: 25px;
+	line-height: 7px;
+}
+
+/*-- dropdown button style --*/
+.dropdown-large {
+	.btn.dropdown-toggle{
+		width: 35px;
+		background: #7ec5ff;
+	}
+	.btn-outline-primary.dropdown-toggle{
+		background: transparent;
+	}
+}
+
+.btn-group{
+	.dropdown-menu{
+		li a{
+			padding: 3px 20px;
+			clear: both;
+			font-weight: 400;
+			line-height: 1.42857143;
+			color: #333;
+			white-space: nowrap;
+		}
+	}
+}
+
+.btn-block.mat-button{
+	width: 100%;
+	margin: 15px 0;
+}
+
+/*-- round button style --*/
+.btn.btn-fab{
+	margin: 7px;
+}
+.btn-default.btn-fab{
+	i.fa{
+		color: $light_dark;
+	}
+}
+.btn-h-sm.btn-fab{
+	height: 35px;
+	width: 35px;
+	min-width: 35px;
+	i.fa{
+		font-size: 14px;
+		line-height: 37px;
+	}
+}
+.btn-h-sm.btn-fab.btn-default{
+	i.fa{
+		line-height: 40px;
+	}
+}
+.btn-h-md.btn-fab{
+	height: 50px;
+	width: 50px;
+	min-width: 50px;
+	i.fa{
+		font-size: 18px;
+		line-height: 50px;
+	}
+}
+.btn-h-md.btn-fab.btn-default{
+	i.fa{
+		line-height: 55px;
+	}
+}
+.btn-h-lg.btn-fab{
+	height: 70px;
+	width: 70px;
+	min-width: 70px;
+	i.fa{
+		font-size: 24px;
+		line-height: 70px;
+	}
+}
+.btn-h-lg.btn-fab.btn-default{
+	i.fa{
+		line-height: 75px;
+	}
+}
+.btn-one-third-group{
+	width: 99%;
+	.btn-one-third{
+		width: 100%;
+	}
+}
+
+.btn-group.block{
+	a{
+		display: block;
+	}
+}
+
+/*-- social button style --*/
+a[class*='icon-btn-'].btn i.fa{
+	vertical-align: initial;
+}
+a[class*='icon-btn-sqr-'].btn{
+	width: 40px;
+	height: 40px;
+	color: $white_clr;
+}
+a[class*='icon-btn-round-'].btn{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: $white_clr;
+	.mat-button-ripple{
+		border-radius: 50%;
+	}
+}
+a[class*='-tw'].btn,
+a[class*='-tw']:active, 
+a[class*='-tw']:active:focus, 
+a[class*='-tw']:focus, 
+a[class*='-tw']:hover{
+	background: $twitter_clr;
+}
+a[class*='-fb'].btn,
+a[class*='-fb']:active, 
+a[class*='-fb']:active:focus, 
+a[class*='-fb']:focus, 
+a[class*='-fb']:hover{
+	background: $facebook_clr;
+}
+
+a[class*='-gplus'].btn,
+a[class*='-gplus']:active, 
+a[class*='-gplus']:active:focus, 
+a[class*='-gplus']:focus, 
+a[class*='-gplus']:hover{
+	background: $google_plus_clr;
+}
+a[class*='-pin'].btn,
+a[class*='-pin']:active, 
+a[class*='-pin']:active:focus, 
+a[class*='-pin']:focus, 
+a[class*='-pin']:hover{
+	background: $pintterest_clr;
+}
+a[class*='-linkedin'].btn,
+a[class*='-linkedinpin']:active, 
+a[class*='-linkedin']:active:focus, 
+a[class*='-linkedin']:focus, 
+a[class*='-linkedin']:hover{
+	background: $linkdin_clr; 
+}
+a[class*='-ins'].btn,
+a[class*='-ins']:active, 
+a[class*='-ins']:active:focus, 
+a[class*='-ins']:focus, 
+a[class*='-ins']:hover{
+	background: $instagram_clr;
+}
+a[class*='-dribbble'].btn,
+a[class*='-dribbble']:active, 
+a[class*='-dribbble']:active:focus, 
+a[class*='-dribbble']:focus, 
+a[class*='-dribbble']:hover{
+	background: $dribbble_clr;
+}
+a[class*='-bhnc'].btn,
+a[class*='-bhnc']:active, 
+a[class*='-bhnc']:active:focus, 
+a[class*='-bhnc']:focus, 
+a[class*='-bhnc']:hover{
+	background: $behance_clr;
+}
+a[class*='-yt'].btn,
+a[class*='-yt']:active, 
+a[class*='-yt']:active:focus, 
+a[class*='-yt']:focus, 
+a[class*='-yt']:hover{
+	background: $youtube_clr;
+}
+.bs-component{
+	margin-bottom: 35px;
+}
+div[class^='social-icon-btn-group']{
+	margin-bottom: 10px;
+}
+
+.vertical-btn{
+	width: 50px;
+	height: 117px;
+	span{
+		display: block;
+		width: 111px;
+		transform: translate(-31px,38px) rotate(-89deg);
+	}
+}
+.btn-icon.mat-button{
+	height: 40px;
+	width: 45px;
+}
+a[class*='icon-btn-detail-'].btn{
+	color: $white_clr;
+}
